@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #efefbb;
+  background: linear-gradient(to right, #d4d3dd, #efefbb); */
+  background-image: url('https://i.redd.it/nx3en0780vu41.png');
+ background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-family: 'Silkscreen', cursive, sans-serif;
+  font-size: 3.5rem;
+  color: red;
+  text-shadow: blue 5px 5px;
+}
+
+
+.poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.poke-container img:hover {
+    width: 900px;
+}
+
+
+
+.pokemon {
+  background-color: #eee;
+  border-radius: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.433);
+  box-shadow: 0 15px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.pokemon .img-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+}
+
+.pokemon .img-container img {
+  max-width: 90%;
+  margin-top: 20px;
+}
+
+.pokemon .info {
+  margin-top: 20px;
+}
+
+.pokemon .info .number {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+.pokemon .info .name {
+  margin: 15px 0 7px;
+  letter-spacing: 1px;
+}
+
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid red;
+    white-space: nowrap;
+    animation: typing 2.5s steps(50, end) forwards;
+    font-size: 1.6rem;
+    width: 0;
+    text-shadow: red 1px 1px;
+    
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 12% }
+  }
+
+  /* h2 {
+    color: blue;
+    text-shadow: red 1px 1px;
+    /* background-color: #eee; */
